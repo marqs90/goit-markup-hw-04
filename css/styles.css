@@ -115,10 +115,10 @@ body {
 	margin-right: 10px;
 	fill: var(--color-font-second);
 }
-
-.contact-icon:hover{
-	color: var(--color-font-third);
+.contact-link:hover svg {
+	fill: #2196f3;
 }
+	
 
 /* Hero */
 
@@ -496,11 +496,10 @@ body {
 
 .footer-social-list {
 	display: flex;
-  text-align: center;
-  justify-content: left;
-  list-style-type: none;
+	text-align: center;
+	justify-content: left;
+	list-style-type: none;
 }
-
 
 .footer-social-link {
 	display: flex;
