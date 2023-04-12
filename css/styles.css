@@ -109,7 +109,15 @@ body {
 
 .contact-icon {
 	margin-right: 10px;
+	fill: var(--color-font-second);
 }
+
+.contact-icon:hover,
+.contact-link:focus,
+.contact-link:active {
+	color: var(--color-font-third);
+}
+
 /* Hero */
 
 .hero {
@@ -205,7 +213,7 @@ body {
 	column-gap: 20px;
 }
 
- .skills-item:hover {
+.skills-item:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -280,7 +288,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
-  }
+}
 
 /* ourJob offer */
 
@@ -361,15 +369,24 @@ body {
 	padding-top: 30px;
 }
 
-.team-social-icon {
-	fill: var(---color-frame-first);
-  }
+.team-social-icons {
+	fill: rgba(175, 177, 184, 1);
+	padding-top: 28px;
+	padding-bottom: 30px;
+	width: 206px;
+	margin: 0 auto;
+	height: 44px;
+	display: flex;
+	justify-content: space-around;
+}
 
-  .team-social-icon:hover {
+.team-social-icon:hover {
 	fill: var(--color-bcg-first);
 	background-color: var(--color-font-third);
 	border-radius: 50%;
-  }
+	width: 44px;
+	height: 44px;
+}
 
 /* Our Clients */
 
@@ -413,6 +430,7 @@ body {
 .clients-item:hover .clients-icon {
 	fill: var(--color-font-third);
 }
+
 /* Footer */
 .footer-box {
 	display: flex;
@@ -457,6 +475,8 @@ body {
 
 .footer-social {
 	margin-left: 70px;
+	width: 206px;
+	height: 80px;
 }
 
 .footer-social > p {
@@ -469,18 +489,25 @@ body {
 
 .footer-social-list {
 	display: flex;
-	justify-content: space-between;
-	gap: 10px;
+  text-align: center;
+  justify-content: left;
+  list-style-type: none;
+}
+
+
+.footer-social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	list-style-type: none;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	fill: #ececec;
+	height: 44px;
+	width: 44px;
+	margin-right: 10px;
 }
 
-.footer-social-icon {
-		/* fill: var(color-bcg-first); */
-		fill:  red;
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 50
-}
-
-.footer-social-icon:hover {
+.footer-social-link:hover {
 	background-color: var(--color-font-third);
 }
