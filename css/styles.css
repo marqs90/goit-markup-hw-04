@@ -91,10 +91,14 @@ body {
 }
 
 .contact-list {
+	display: flex;
+	align-items: center;
 	list-style-type: none;
 }
 
 .contact-link {
+	display: flex;
+	align-items: center;
 	color: var(--color-font-second);
 	text-decoration: none;
 	font-size: 14px;
@@ -112,9 +116,7 @@ body {
 	fill: var(--color-font-second);
 }
 
-.contact-icon:hover,
-.contact-link:focus,
-.contact-link:active {
+.contact-icon:hover{
 	color: var(--color-font-third);
 }
 
@@ -214,6 +216,7 @@ body {
 }
 
 .skills-item:hover {
+	cursor: pointer;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -369,25 +372,29 @@ body {
 	padding-top: 30px;
 }
 
-.team-social-icons {
-	fill: rgba(175, 177, 184, 1);
-	padding-top: 28px;
-	padding-bottom: 30px;
-	width: 206px;
-	margin: 0 auto;
-	height: 44px;
+.team-social-link {
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	fill: rgba(175, 177, 184, 1);
+	height: 44px;
+	width: 44px;
+	margin-right: 10px;
 }
 
-.team-social-icon:hover {
+.team-social-link:hover {
 	fill: var(--color-bcg-first);
 	background-color: var(--color-font-third);
-	border-radius: 50%;
-	width: 44px;
-	height: 44px;
 }
 
+.team-social-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
 /* Our Clients */
 
 .clients {
